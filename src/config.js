@@ -1,115 +1,116 @@
 export const config = {
-  "number": 23,
-  "slug": "caption-localizer",
-  "title": "Caption Localizer",
-  "category": "Marketing & Content",
-  "tagline": "Caption templates that sound like the neighborhood, not a national brand.",
-  "persona": "Marketing pods drafting social posts quickly.",
-  "gap": "AI captions often sound generic and flatten community voice.",
-  "niche": "Neighborhood-first social media management.",
-  "metric": "caption drafts approved without major voice edits",
-  "modules": [
-    "Tone cards",
-    "Local reference prompts",
-    "Bilingual caption frames",
-    "Approval workflow"
-  ],
-  "theme": {
-    "accent": "#db2777",
-    "accent2": "#f9a8d4",
-    "emoji": "\ud83d\udce3",
-    "metricLabel": "Content readiness",
-    "workflow": [
-      "Capture owner voice",
-      "Generate channel-ready assets",
-      "Review for local fit",
-      "Export approved content"
+    "number": 23,
+    "slug": "caption-localizer",
+    "title": "Caption Localizer",
+    "category": "Marketing & Content",
+    "tagline": "Caption templates that sound like the neighborhood, not a national brand.",
+    "persona": "Marketing pods drafting social posts quickly.",
+    "gap": "AI captions often sound generic and flatten community voice.",
+    "niche": "Neighborhood-first social media management.",
+    "metric": "caption drafts approved without major voice edits",
+    "modules": [
+        "Tone cards",
+        "Local reference prompts",
+        "Bilingual caption frames",
+        "Approval workflow"
     ],
-    "privacy": "Do not publish quotes, photos, or testimonials without explicit owner/client approval."
-  },
-  "statuses": [
-    "not-started",
-    "blocked",
-    "in-progress",
-    "ready",
-    "approved"
-  ],
-  "criteria": [
-    {
-      "id": "tone-cards",
-      "label": "Tone cards",
-      "weight": 15,
-      "defaultStatus": "not-started",
-      "prompt": "Implement and verify tone cards with evidence that a Volta student pod, mentor, and owner can understand."
+    "theme": {
+        "accent": "#db2777",
+        "accent2": "#f9a8d4",
+        "emoji": "\ud83d\udce3",
+        "metricLabel": "Content readiness",
+        "workflow": [
+            "Capture owner voice",
+            "Generate channel-ready assets",
+            "Review for local fit",
+            "Export approved content"
+        ],
+        "privacy": "Do not publish quotes, photos, or testimonials without explicit owner/client approval."
     },
-    {
-      "id": "local-reference-prompts",
-      "label": "Local reference prompts",
-      "weight": 15,
-      "defaultStatus": "not-started",
-      "prompt": "Implement and verify local reference prompts with evidence that a Volta student pod, mentor, and owner can understand."
+    "statuses": [
+        "not-started",
+        "blocked",
+        "in-progress",
+        "ready",
+        "approved"
+    ],
+    "criteria": [
+        {
+            "id": "tone-cards",
+            "label": "Tone cards",
+            "weight": 15,
+            "defaultStatus": "not-started",
+            "prompt": "Implement and verify tone cards with evidence that a Volta student pod, mentor, and owner can understand."
+        },
+        {
+            "id": "local-reference-prompts",
+            "label": "Local reference prompts",
+            "weight": 15,
+            "defaultStatus": "not-started",
+            "prompt": "Implement and verify local reference prompts with evidence that a Volta student pod, mentor, and owner can understand."
+        },
+        {
+            "id": "bilingual-caption-frames",
+            "label": "Bilingual caption frames",
+            "weight": 15,
+            "defaultStatus": "not-started",
+            "prompt": "Implement and verify bilingual caption frames with evidence that a Volta student pod, mentor, and owner can understand."
+        },
+        {
+            "id": "approval-workflow",
+            "label": "Approval workflow",
+            "weight": 15,
+            "defaultStatus": "not-started",
+            "prompt": "Implement and verify approval workflow with evidence that a Volta student pod, mentor, and owner can understand."
+        },
+        {
+            "id": "evidence-quality",
+            "label": "Evidence quality",
+            "weight": 10,
+            "defaultStatus": "not-started",
+            "prompt": "Attach proof, source notes, screenshots, owner confirmation, or reviewer rationale."
+        },
+        {
+            "id": "owner-handoff",
+            "label": "Owner handoff",
+            "weight": 10,
+            "defaultStatus": "not-started",
+            "prompt": "Make the output understandable and maintainable by a nontechnical owner."
+        },
+        {
+            "id": "mission-alignment",
+            "label": "Mission alignment",
+            "weight": 10,
+            "defaultStatus": "not-started",
+            "prompt": "Show how this advances digital equity, student growth, or pro bono delivery."
+        },
+        {
+            "id": "qa-safety",
+            "label": "QA and safety",
+            "weight": 10,
+            "defaultStatus": "not-started",
+            "prompt": "Resolve privacy, accessibility, accuracy, and operational risks before handoff."
+        }
+    ],
+    "templates": {
+        "actions": [
+            "Run a real Volta scenario for Caption Localizer and capture baseline evidence.",
+            "Complete the tone cards workflow with owner-safe notes.",
+            "Resolve all blocked rubric items and add evidence for every ready item.",
+            "Export the handoff packet and review it with a mentor before client use."
+        ]
     },
-    {
-      "id": "bilingual-caption-frames",
-      "label": "Bilingual caption frames",
-      "weight": 15,
-      "defaultStatus": "not-started",
-      "prompt": "Implement and verify bilingual caption frames with evidence that a Volta student pod, mentor, and owner can understand."
-    },
-    {
-      "id": "approval-workflow",
-      "label": "Approval workflow",
-      "weight": 15,
-      "defaultStatus": "not-started",
-      "prompt": "Implement and verify approval workflow with evidence that a Volta student pod, mentor, and owner can understand."
-    },
-    {
-      "id": "evidence-quality",
-      "label": "Evidence quality",
-      "weight": 10,
-      "defaultStatus": "not-started",
-      "prompt": "Attach proof, source notes, screenshots, owner confirmation, or reviewer rationale."
-    },
-    {
-      "id": "owner-handoff",
-      "label": "Owner handoff",
-      "weight": 10,
-      "defaultStatus": "not-started",
-      "prompt": "Make the output understandable and maintainable by a nontechnical owner."
-    },
-    {
-      "id": "mission-alignment",
-      "label": "Mission alignment",
-      "weight": 10,
-      "defaultStatus": "not-started",
-      "prompt": "Show how this advances digital equity, student growth, or pro bono delivery."
-    },
-    {
-      "id": "qa-safety",
-      "label": "QA and safety",
-      "weight": 10,
-      "defaultStatus": "not-started",
-      "prompt": "Resolve privacy, accessibility, accuracy, and operational risks before handoff."
+    "sample": {
+        "clientName": "Oak & Olive Cafe",
+        "chapter": "Dallas",
+        "studentLead": "Volta Student Lead",
+        "notes": "Neighborhood marketing project with owner-approved content assets. Caption Localizer sample.",
+        "evidencePrefix": "Caption Localizer",
+        "evidence": [
+            "Discovery call notes captured with owner confirmation.",
+            "Public digital footprint reviewed and summarized.",
+            "Mentor QA comments attached before handoff."
+        ]
     }
-  ],
-  "templates": {
-    "actions": [
-      "Run a real Volta scenario for Caption Localizer and capture baseline evidence.",
-      "Complete the tone cards workflow with owner-safe notes.",
-      "Resolve all blocked rubric items and add evidence for every ready item.",
-      "Export the handoff packet and review it with a mentor before client use."
-    ]
-  },
-  "sample": {
-    "clientName": "Oak & Olive Cafe",
-    "chapter": "Dallas",
-    "studentLead": "Volta Student Lead",
-    "notes": "Neighborhood marketing project with owner-approved content assets. Caption Localizer sample.",
-    "evidencePrefix": "Caption Localizer",
-    "evidence": [
-      "Discovery call notes captured with owner confirmation.",
-      "Public digital footprint reviewed and summarized.",
-      "Mentor QA comments attached before handoff."
-    ]
-  }
 };
+//# sourceMappingURL=config.js.map

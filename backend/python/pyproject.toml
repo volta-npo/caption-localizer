@@ -1,0 +1,8 @@
+[project]
+name = "caption-localizer-backend"
+version = "0.1.0"
+description = "Backend evidence engine for Caption Localizer"
+requires-python = ">=3.9"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
