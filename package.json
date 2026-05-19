@@ -1,0 +1,35 @@
+{
+  "name": "@volta-oss/caption-localizer",
+  "version": "3.0.0",
+  "private": false,
+  "type": "module",
+  "description": "Caption templates that sound like the neighborhood, not a national brand.",
+  "scripts": {
+    "test": "node --test",
+    "start": "python3 -m http.server 4173",
+    "validate": "node --test",
+    "certify": "node --test test/v3.test.js",
+    "test:all": "node --test"
+  },
+  "keywords": [
+    "digital-equity",
+    "local-first",
+    "marketing-content",
+    "oss",
+    "v3-production",
+    "volta"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volta-npo/23-caption-localizer.git"
+  },
+  "homepage": "https://volta-npo.github.io/23-caption-localizer/",
+  "bugs": {
+    "url": "https://github.com/volta-npo/23-caption-localizer/issues"
+  },
+  "author": "Volta OSS Division <volta.npo@gmail.com>",
+  "engines": {
+    "node": ">=20"
+  }
+}
